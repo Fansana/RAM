@@ -1,0 +1,16 @@
+	    READ 1 |n
+	    READ 2 |m
+	    LOAD 2
+	    JGTZ continue | if m > 0 continue
+	    JUMP m        | else print(-1)
+continue:	LOAD 1
+	    DIV 2
+	    MULT 2
+	    STORE 3
+	    LOAD 1
+	    SUB 3
+	    STORE 4
+	    WRITE 4
+	    HALT
+m:      WRITE =-1  | print(-1)
+	    HALT
